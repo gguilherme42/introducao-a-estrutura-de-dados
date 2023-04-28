@@ -1,0 +1,1 @@
+## Escreva um programa que capture do teclado o número de segundos transcorridos num evento e imprima o tempo correspondente no formato hora-minuto-segundo: _h:m:s_, onde _hora_ e _minuto_ são exibidos com dois dígitos, preenchidos com zero à esquerda ("%02d"), e _segundo_ exibido com duas casas decimais, também preenchido com zero à esquerda ("%05.2f"). 
