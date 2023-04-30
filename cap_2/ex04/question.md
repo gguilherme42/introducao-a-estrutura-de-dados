@@ -1,0 +1,1 @@
+## Escreva um progama que converta um valor de ângulo dado em radianos para o valor correspondente expresso em _graus, minutos e segundos_. Sabe-se que 1 radiano equivale a 57.29578 graus. Escolha um forma de saida apropriado.
