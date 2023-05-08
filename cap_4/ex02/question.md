@@ -1,0 +1,1 @@
+## O máximo divisor comum de três números inteiros positivos, MDC(x, y, z), é igual a MDC(MDC(x,y),z). Escreva um programa que capture três números inteiros fornecidos via teclado e imprima o MDC deles, usando a função MDC apresentada no texto.
