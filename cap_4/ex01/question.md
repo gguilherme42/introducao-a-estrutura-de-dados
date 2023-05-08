@@ -1,0 +1,1 @@
+## Escreva um programa, estruturado em diversar funções, para calcular o volume de uma peça formada por uma esfera com um furo cilíndrico, conforme ilustrado na Ifugra 4.6. Sabe-se que o volume de uma calota esféria de altura _h_ é dado por _(1/3)*pi*h²*(3 * R - h)_, onde _R_ representa o raio da esfera.
