@@ -1,0 +1,1 @@
+## Implemente uma função que receba como parâmetros dois números inteiros _n_ e _k_, e calcule o coeficiente binomial _C(n,k)_ correspondente, definido pela seguinte relação recursiva: _C(n,0) = C(n,n) = 1 para n >= 0; C(n,k) = C(n - 1, k) + C(n - 1, k - 1) para n > k > 0_. O protótipo dessa função deve ser: _int coeficiente(int n, int k);_.
