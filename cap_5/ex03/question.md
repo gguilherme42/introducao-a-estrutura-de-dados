@@ -1,0 +1,1 @@
+## Considerando a função que avalia o valor _n-ésimo_ termo da śerie de Fibonacci, escreva um programa para: (a) imprimir os primeiros _n_ termos da série, ondde _n_ é fornecido via teclado; (b) determinar se um valor _x_, fornecido via teclado, pertence ou não à série.
