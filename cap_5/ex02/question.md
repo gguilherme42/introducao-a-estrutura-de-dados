@@ -1,0 +1,1 @@
+## Considerando a função que determina se um número é ou não primo, escreva um programa para: (a) imprimir todos os números primos menores que um valor _x_, fornecido via teclado; (b) imprimir os primerios _n_ números primos, onde _n_ é fornecido via teclado.
