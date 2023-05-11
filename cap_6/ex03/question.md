@@ -1,0 +1,1 @@
+## Escreva uma função que retorne o valor mínimo armazenado em um vetor. Essa função deve obedecer ao protótipo a seguir. Escreva um programa para testar sua função. _float minimo(int n, float* vet);_.
