@@ -1,0 +1,1 @@
+## Implemente uma função que receba como parâmetro um vetor de números inteiros de tamanho n e inverta a ordem dos elementos armazenados nesse vetor. Essa função deve obedecer o protótipo a seguir. Escreva um programa para testar sua função. _void inverte(int n, int* vet);_.
