@@ -1,0 +1,1 @@
+## A média harmônica, _Hn_, de um conjunto de valores é dada por: [não consigo reproduzir a equação no pc, mas está na página 100]. Escreva uma função para calcular e retornar a média harmônica de um conjunto de valores. Essa função dee obedecer ao protótipo a seguir. Escreva um programa para testar sua função. _float harmonica(int n, float *v);_.
