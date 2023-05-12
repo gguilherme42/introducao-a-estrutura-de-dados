@@ -1,0 +1,1 @@
+## A média geométrica, _Gn_, de um conjunto de valores é dada por [equacação da p. 101]. Escrevauma função para calcular e retornar a média geométrica de um conjunto de valores. Essa função deve obedecer ao protótipo a seguir. Escreva um programa para testar sua função. _float geometrica(int n, float *v);_.
