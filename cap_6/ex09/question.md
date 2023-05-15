@@ -1,0 +1,1 @@
+## Reescreva as funções para calcular a soma e o produto de polinômios representados por vetores para considerar que os dois polinômios de entrada possam ter graus diferentes. Os coeficientes não existentes no polinômio de menor grau têm valores nulos, mas não representados no vetor.
