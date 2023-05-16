@@ -14,7 +14,7 @@ int is_not_identity(double A[][N], int l, int c){
 
 
 
-int identidade(double A[][N]){
+int is_identity(double A[][N]){
 	for (int i = 0; i < N; i++){
 		for (int j = 0; j < N; j++){
 			if (is_not_identity(A,i,j)) return 0;
@@ -31,6 +31,6 @@ int main(void){
 		{0, 0, 1}
 	};
 
-	printf("Matriz identidade: %s\n", (identidade(matrix) ? "SIM": "NÃO"));
+	printf("Matriz identidade: %s\n", (is_identity(matrix) ? "SIM": "NÃO"));
 	return 0;
 }
