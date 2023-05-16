@@ -15,12 +15,6 @@ int is_not_identity(double A[][N], int l, int c){
 
 
 int identidade(double A[][N]){
-	//int is_not_identity(int line, int column){
-	//	if (is_diagonal(line,column)) return A[line][column] != 1;		
-//		return A[line][column] != 0;
-//	}
-
-
 	for (int i = 0; i < N; i++){
 		for (int j = 0; j < N; j++){
 			if (is_not_identity(A,i,j)) return 0;
