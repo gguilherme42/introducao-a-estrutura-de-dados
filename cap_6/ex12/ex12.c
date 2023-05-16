@@ -8,8 +8,6 @@ int is_diagonal(int line, int column){return line == column;}
 
 
 int identidade(double A[][N]){
-	int result = 1;
-
 	int is_not_identity(int line, int column){
 		if (is_diagonal(line,column)) return A[line][column] != 1;		
 		return A[line][column] != 0;
@@ -21,7 +19,7 @@ int identidade(double A[][N]){
 			if (is_not_identity(i,j)) return 0;
 		}
 	}
-	return result;
+	return 1;
 }
 
 
