@@ -1,0 +1,1 @@
+## Escreva uma função que, dadas duas matrizes quadradas, _A_ e _B_, verifique se _B_ é a _inversa_ de _A_, isto é, se _B_ é igual a _A^-1_. Se _B_ for a inversa, a multiplicação de _A_ por _B_ resulta numa matriz identidade. A função deve retornar 1 se _B_ é a inversa de _A_ e 0 caso contrário, e deve seguir o seguinte protótipo: _int inversa(double A[][N], double B[][N]);_.
