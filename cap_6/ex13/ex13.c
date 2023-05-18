@@ -34,16 +34,18 @@ void print_m(const int A[][N]){
 }
 
 void multiply_matrix(const int A[][N], const int B[][N], int C[][N]){
-	int cup[N] = {0,0,0};
+	int cup = 0;
 
 	for (int i = 0; i < N; i++){
-		for (int j = 0; j < N; j++){
-			for (int p = 0; p < N; p++){
-				cup[i] += A[i][p] * B[p][i];			
+		for (int p = 0; p < N; p++){
+			cup = 0;
+			for (int j = 0; j < N; j++){
+				cup += A[i][j] * B[j][p];
 			}
-			printf("cup[%d]: %d\n", i, cup[i]);
-			C[i][j] = cup[j]; 
+			printf("%d: %d\n", i, cup);
 		}
+
+
 
 	}
 
@@ -72,7 +74,7 @@ int main(void){
 
 	multiply_matrix(matrix_A, matrix_B, matrix_C);
 	print_check_invertible(matrix_C);
-	//print_m(matrix_C);
+	print_m(matrix_C);
 	
 	return 0;
 }
