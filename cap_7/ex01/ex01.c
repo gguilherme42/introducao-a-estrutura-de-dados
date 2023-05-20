@@ -29,9 +29,11 @@ float* reverso(int len, float *vet){
 int main(void){
 	float numbers[5] = {0,1,2,3,4};
 	int l = 5;
-	//float* new_n;
+	float* new_n;
 
 	print_v(l, numbers);
-	print_v(l, reverso(l, numbers));
+	new_n = reverso(l, numbers);
+	print_v(l, new_n);
+	free(new_n);
 	return 0;
 }
