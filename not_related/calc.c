@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 
 int abs(int n){return n < 0 ? -n: n;}
@@ -32,7 +33,7 @@ int sub(int a, int b){
 }
 
 
-int div(int a, int b){
+int my_div(int a, int b){
 	if (a == 0 || b == 0 || b > a) return 0;
 	if (b == 1) return a;
 	if (b == -1) return -a;
@@ -65,19 +66,48 @@ int my_pow(int a, int b){
 	return result;
 }
 
-int main(void){
-	int n1 = 0;
-	int n2 = 0;
 
-	printf("Valor 1: ");
+void menu(){
+	system("clear");
+	printf("-------------------------------------------------------\n");
+	printf("\t\t\tCALCULADORA\n");
+	printf("-------------------------------------------------------\n");
+	printf("\t[1] Adição\n");
+	printf("\t[2] Subtração\n");
+	printf("\t[3] Multiplicação\n");
+	printf("\t[4] Divisão\n");
+	printf("\t[5] Exponenciação\n");
+	printf("\t[0] SAIR\n");
+
+}
+
+
+
+
+void operation(int op, int a, int b){
+	if (op == 1) printf("\t%d + %d = %d\n", a, b, (a + b));
+	if (op == 2) printf("\t%d x %d = %d\n", a, b, multiply(a, b));
+	if (op == 3) printf("\t%d - %d = %d\n", a, b, sub(a, b));
+	if (op == 4) printf("\t%d / %d = %d\n", a, b, my_div(a, b));
+	if (op == 5) printf("\t%d ^ %d = %d\n", a, b, my_pow(a, b));
+	if (op == 0) exit(1);
+
+};
+
+
+
+
+int main(void){
+	int n1, n2, op;
+
+	menu();
+	printf("- Operação: ");
+	scanf("%d", &op);
+	printf("- Valor 1: ");
 	scanf("%d", &n1);
-	printf("Valor 2: ");
+	printf("- Valor 2: ");
 	scanf("%d", &n2);
 
-	printf("%d x %d = %d\n", n1, n2, multiply(n1,n2));
-	printf("%d - %d = %d\n", n1, n2, sub(n1,n2));
-	printf("%d / %d = %d\n", n1, n2, div(n1, n2));
-	printf("%d ^ %d = %d\n", n1, n2, my_pow(n1, n2));
-
+	operation(op, n1, n2);
 	return 0;
 }
