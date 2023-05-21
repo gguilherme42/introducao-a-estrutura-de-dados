@@ -49,6 +49,7 @@ int div(int a, int b){
 
 int my_pow(int a, int b){
 	if (a == 0 || b < 0) return 0;
+	if (a == 1) return 1;
 	if (b == 0) return 1;
 	if (b == 1) return a;
 
