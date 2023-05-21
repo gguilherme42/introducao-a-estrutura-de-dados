@@ -12,10 +12,10 @@ int multiply(int a, int b){
 	if (a == 1) return b;
 	
 	int result = 0;
-	int cup = abs(b);
-	int mug = abs(a);
-	for (int i = 0; i < cup; i++){
-		result += mug;
+	int absB = abs(b);
+	int absA = abs(a);
+	for (int i = 0; i < absB; i++){
+		result += absA;
 	}
 
 	result = is_result_positive(a, b) ? result : -result;
@@ -57,8 +57,8 @@ int my_pow(int a, int b){
 	if (b < 0) return 0;
 
 	int result = a;
-	int cup = abs(b);
-	for (int i = 1; i < cup; i++){
+	int absB = abs(b);
+	for (int i = 1; i < absB; i++){
 		result = multiply(result, a);
 	}
 
@@ -77,7 +77,6 @@ int main(void){
 	printf("%d x %d = %d\n", n1, n2, multiply(n1,n2));
 	printf("%d - %d = %d\n", n1, n2, sub(n1,n2));
 	printf("%d / %d = %d\n", n1, n2, div(n1, n2));
-	//printf("TESTE: %d\n", n2);
 	printf("%d ^ %d = %d\n", n1, n2, my_pow(n1, n2));
 
 	return 0;
