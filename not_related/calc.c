@@ -31,7 +31,26 @@ int multiply(int a, int b){
 }
 
 
+int sub(int a, int b){
+	int result = 0;
+	if (a == 0) return b;
+	if (b == 0) return a;
+	if (a == b) return 0;
+	
+	if (a > b){
+		while ((result + b) < a){
+			result++;
+		}
+	} else {
+		while ((result + a) < b){
+			result++;
+		}
+		result = -result;
+	}
+	
+	return result;
 
+}
 
 int main(void){
 	int n1, n2;
@@ -41,6 +60,7 @@ int main(void){
 	scanf("%d", &n2);
 
 	printf("%d x %d = %d\n", n1, n2, multiply(n1,n2));
+	printf("%d - %d = %d\n", n1, n2, sub(n1,n2));
 
 	return 0;
 }
