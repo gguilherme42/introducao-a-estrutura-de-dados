@@ -123,9 +123,10 @@ int input_operation(){
 }
 
 
-
 int main(void){
 	int op;
+	int numbers[5];
+	
 	menu();
 	op = input_operation();
 	operation(op);
