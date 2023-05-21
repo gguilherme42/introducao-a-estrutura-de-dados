@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int abs(int n){return n < 0 ? n * (-1): n;}
+int abs(int n){return n < 0 ? -n: n;}
 
 int is_result_positive(int a, int b){return (a < 0) ^ (b < 0) ? 0 : 1;}
 
