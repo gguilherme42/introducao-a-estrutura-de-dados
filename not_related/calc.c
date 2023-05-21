@@ -38,20 +38,23 @@ int div(int a, int b){
 	if (b == -1) return -a;
 	
 	int result = 1;
-	while (multiply(result, b) != a ){
+	int absA = abs(a);
+	int absB = abs(b);
+	while (multiply(result, absB) < absA ){
 		result++;
 	}
 
-	return result;
+	return is_result_positive(a, b) ? result : - result;
 
 }
 
 
 int my_pow(int a, int b){
-	if (a == 0 || b < 0) return 0;
+	if (a == 0) return 0;
 	if (a == 1) return 1;
 	if (b == 0) return 1;
 	if (b == 1) return a;
+	if (b < 0) return 0;
 
 	int result = a;
 	int cup = abs(b);
@@ -63,7 +66,9 @@ int my_pow(int a, int b){
 }
 
 int main(void){
-	int n1, n2;
+	int n1 = 0;
+	int n2 = 0;
+
 	printf("Valor 1: ");
 	scanf("%d", &n1);
 	printf("Valor 2: ");
@@ -72,6 +77,7 @@ int main(void){
 	printf("%d x %d = %d\n", n1, n2, multiply(n1,n2));
 	printf("%d - %d = %d\n", n1, n2, sub(n1,n2));
 	printf("%d / %d = %d\n", n1, n2, div(n1, n2));
+	//printf("TESTE: %d\n", n2);
 	printf("%d ^ %d = %d\n", n1, n2, my_pow(n1, n2));
 
 	return 0;
