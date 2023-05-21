@@ -46,6 +46,21 @@ int div(int a, int b){
 
 }
 
+
+int my_pow(int a, int b){
+	if (a == 0 || b < 0) return 0;
+	if (b == 0) return 1;
+	if (b == 1) return a;
+
+	int result = a;
+	int cup = abs(b);
+	for (int i = 1; i < cup; i++){
+		result = multiply(result, a);
+	}
+
+	return result;
+}
+
 int main(void){
 	int n1, n2;
 	printf("Valor 1: ");
@@ -56,6 +71,7 @@ int main(void){
 	printf("%d x %d = %d\n", n1, n2, multiply(n1,n2));
 	printf("%d - %d = %d\n", n1, n2, sub(n1,n2));
 	printf("%d / %d = %d\n", n1, n2, div(n1, n2));
+	printf("%d ^ %d = %d\n", n1, n2, my_pow(n1, n2));
 
 	return 0;
 }
