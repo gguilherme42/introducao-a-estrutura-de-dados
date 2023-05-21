@@ -84,30 +84,51 @@ void menu(){
 
 
 
-void operation(int op, int a, int b){
+void operation(int op){
+	int a, b;
+	printf("- Valor 1: ");
+	scanf("%d", &a);
+	printf("- Valor 2: ");
+	scanf("%d", &b);
+	
+	
 	if (op == 1) printf("\t%d + %d = %d\n", a, b, (a + b));
 	if (op == 2) printf("\t%d x %d = %d\n", a, b, multiply(a, b));
 	if (op == 3) printf("\t%d - %d = %d\n", a, b, sub(a, b));
 	if (op == 4) printf("\t%d / %d = %d\n", a, b, my_div(a, b));
 	if (op == 5) printf("\t%d ^ %d = %d\n", a, b, my_pow(a, b));
-	if (op == 0) exit(1);
 
 };
 
 
+int is_a_valid_operation(int op){
+	return op == 1 || op == 2 || op == 3 || op == 4 || op == 5 || op == 0;
+}
+
+
+int input_operation(){
+	int n = 0;	
+	while (1){
+		printf("- Operação: ");
+		scanf("%d", &n);
+
+		if (is_a_valid_operation(n)) {
+			if (n == 0) exit(1);
+			return n;
+		}
+
+		printf("\tOPERAÇÃO INVÁLIDA\n");
+
+	}
+}
+
 
 
 int main(void){
-	int n1, n2, op;
-
+	int op;
 	menu();
-	printf("- Operação: ");
-	scanf("%d", &op);
-	printf("- Valor 1: ");
-	scanf("%d", &n1);
-	printf("- Valor 2: ");
-	scanf("%d", &n2);
+	op = input_operation();
+	operation(op);
 
-	operation(op, n1, n2);
 	return 0;
 }
