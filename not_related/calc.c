@@ -3,13 +3,7 @@
 
 int abs(int n){return n < 0 ? n * (-1): n;}
 
-
-int is_result_positive(int a, int b){
-	if (a < 0 && b < 0) return 1;
-	if (a >= 0 && b < 0) return 0;
-	if (a < 0 && b >= 0) return 0;
-	return 1;
-}
+int is_result_positive(int a, int b){return (a < 0) ^ (b < 0) ? 0 : 1;}
 
 
 int multiply(int a, int b){
