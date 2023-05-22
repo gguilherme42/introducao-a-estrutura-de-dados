@@ -37,11 +37,20 @@ void print_m(int len,float** m){
 
 
 
+void assign_to_matrix(int i, int j, float value, float ** m){
+	m[i][j] = value;
+
+}
+
+
+
 int main(void){
 	int l = 3;
 	float ** matrix_A;
 
 	matrix_A = create_square_bottom_matrix(l);
+	assign_to_matrix(1,0,22, matrix_A);
 	//print_m(l, matrix_A);
+	//printf("%.2f\n", matrix_A[1][0]);
 	return 0;
 }
