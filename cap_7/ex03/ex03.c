@@ -48,7 +48,9 @@ void assign_to_matrix(int i, int j, float value, float ** m){
 }
 
 
-
+void free_matrix(int len, float ** m){
+	free(m);
+}
 
 
 int main(void){
@@ -58,6 +60,6 @@ int main(void){
 	matrix_A = create_square_bottom_matrix(l);
 	assign_to_matrix(1,0,22, matrix_A);
 	print_m(l, matrix_A);
-	//printf("%.2f\n", matrix_A[1][0]);
+	free_matrix(l, matrix_A);
 	return 0;
 }
