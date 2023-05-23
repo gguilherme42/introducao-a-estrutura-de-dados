@@ -1,0 +1,1 @@
+## Implemente uma função que receba uma string como parâmetro e desloque os seus caracteres uma posição a direta. Por exemplo, a string "casa" seria alterada para "acas". Repare que o último caractere vai para o início da string. Essa função deve obedecer o protótipo: _void rodastring(char *str);_.
