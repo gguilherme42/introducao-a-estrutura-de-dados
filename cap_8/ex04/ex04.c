@@ -17,8 +17,6 @@ char next_letter(char c){
 }
 
 
-
-
 char shift_c(char c){
 	if (is_a_letter(c)) return next_letter(c);
 	return c;
