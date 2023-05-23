@@ -10,8 +10,10 @@ int is_a_letter(char c){return is_lower(c) || is_upper(c);}
 char next_letter(char c){
 	char first_char = is_lower(c) ? 'a' : 'A';
 	char next = c + 1;
-	if (((c - first_char) + 1) < 25) return next;
-	return first_char;
+	int alphabet_len = 25;
+	int is_next_out_of_range = (next - first_char) > alphabet_len;
+
+	return is_next_out_of_range ? first_char : next;
 }
 
 
