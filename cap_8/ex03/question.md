@@ -1,0 +1,1 @@
+## Implemente uma função que receba uma string como parâmetro e altere nessa string as ocorrências de caracteres maíusculos para minúsculos. Essa função deve obedecer o protótipo: _void minusculo(char* str);_.
