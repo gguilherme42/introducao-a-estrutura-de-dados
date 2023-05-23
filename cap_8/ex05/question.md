@@ -1,0 +1,1 @@
+## Implemente uma função que receba uma string como parâmetro e substitua as ocorrências de uma letra pelo seu oposto no alfabeto, isto é, a → z, b → y, c → x etc. Caracteres que nao forem letras devem permanecer inalterados. Essa função deve obedecer o protótipo: _void string_oposta(char *str);_.
