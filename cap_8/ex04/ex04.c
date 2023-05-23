@@ -7,23 +7,19 @@ int is_upper(char c){return (c >= 'A') && (c <= 'Z');}
 
 int is_a_letter(char c){return is_lower(c) || is_upper(c);}
 
-char next_letter(char c){return c + 1;}
+char next_letter(char c){
+	char first_char = is_lower(c) ? 'a' : 'A';
+	char next = c + 1;
+	if (((c - first_char) + 1) < 25) return next;
+	return first_char;
+}
+
+
 
 
 char shift_c(char c){
-	char result = c;
-	if (is_a_letter(result)){
-		char first_char = is_lower(result) ? 'a' : 'A';
-		if (is_lower(result)){
-			result = ((result - first_char) + 1) < 25 ? next_letter(c) : first_char;
-			return result;
-		} else {
-			result = ((result - first_char) + 1) < 25 ? next_letter(c) : first_char;
-			return result;
-		
-		}
-	}
-	return result;
+	if (is_a_letter(c)) return next_letter(c);
+	return c;
 }
 
 
