@@ -19,10 +19,8 @@ char * concat(char * s1, char * s2, char sep){
 	int c;
 	for (i = 0; s1[i] != '\0'; i++){
 		result[i] = s1[i];
-		printf("R{%d}: %c\n", i, result[i]);
 	}
 	c = i;
-	printf("C = %d\n", c);
 	result[c] = sep;
 
 	for(i = 0; s2[i] != '\0'; i++){
@@ -36,12 +34,10 @@ char * concat(char * s1, char * s2, char sep){
 
 int main(void){
 	char text_a[] = "ex";
-	char text_b[] = "aluno";
+	char text_b[] = "namorada(o)";
 	char sep = '-';
 	char *  new_text = concat(text_a, text_b, sep);
-
 	printf("%s\n", new_text);
-	printf("A: %d, B: %d, RESULT: %d\n", len(text_a), len(text_b), len(new_text));
 	free(new_text);
 	return 0;
 }
