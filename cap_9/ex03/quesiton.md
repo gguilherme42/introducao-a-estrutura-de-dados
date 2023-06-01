@@ -1,0 +1,2 @@
+## Defina estruturas para representar retângulos (dados a base e a altura) e círculos (dado o raio), e implemente as funções a seguir: (a) dado um círculo crie e retorne o maior retângulo circunscrito de altura _h_, considere que _h_ é menor que o diâmetro do círculo: _Ret* retcircunscrito(Circ *c, float h);_; (b) Dado um retângulo crie e retorne o maior círculo dentro do retângulo: _Circ* circinterno(Ret *r);_.
+
