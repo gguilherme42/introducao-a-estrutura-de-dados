@@ -24,13 +24,24 @@ Rectangle* circumscript_rect(Circle* c, float h){
 }
 
 
+Circle* intern_circle(Rectangle * rect){
+	Circle* result = (Circle *) malloc(sizeof(Circle));
+	result->r = rect->b;
+	return result;
+}
+
 int main(void){
-	Rectangle* test;
+	Rectangle* new_rect;
+	Circle * new_circle;
 	Circle a;
 	a.r = 5;
 
-	test = circumscript_rect(&a, 8);	
-	printf("h: %f | b: %f\n", test->h, test->b);
-	free(test);
+	new_rect = circumscript_rect(&a, 8);
+	new_circle = intern_circle(new_rect);	
+	
+	printf("h: %f | b: %f\n", new_rect->h, new_rect->b);
+	printf("r: %f\n", new_circle->r);
+	free(new_rect);
+	free(new_circle);
 	return 0;
 }
