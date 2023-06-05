@@ -25,10 +25,8 @@ int intersection(Circle* a, Circle* b){
 
 
 int main(void){
-	Circle a1, a2;
-	a1.c.x = 3;
-	a1.c.y = 3;
-	a1.r = 1;
+	Circle a1 = {{3, 3}, 1};
+	Circle a2;
 
 	a2.c.x = 5;
 	a2.c.y = 5;
