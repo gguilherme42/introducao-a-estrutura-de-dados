@@ -24,7 +24,16 @@ int intersection(Circle* a, Circle* b){
 }
 
 
+float length(int n, Point* v){
+	float result = 0;
+	for(int i = 0; i < (n - 1); i++) {
+		result+= sqrt(pow(v[i].x - v[i + 1].x, 2) + pow(v[i].y - v[i + 1].y, 2));
+	}
+	return result;
+}
+
 int main(void){
+	Point v_point[6] = {{1,1}, {2,2}, {3,1}, {4,0}, {6,2}, {8,1}};
 	Circle a1 = {{3, 3}, 1};
 	Circle a2;
 
@@ -33,5 +42,6 @@ int main(void){
 	a2.r = 1;
 
 	printf("Interseção entre a1 ae a1: %s\n", (intersection(&a1,&a2) ? "SIM":"NÃO"));
+	printf("Comprimento da linha poligonal: %.2f\n", length(6, v_point));
 	return 0;
 }
