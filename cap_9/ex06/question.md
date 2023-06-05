@@ -1,0 +1,1 @@
+## Considerando as declarações do tipo Aluno do exercício anterior, implemente uma função que tenha como valor de retorno a média final obtida pelos alunos de determinada turma. A nota final é dada pela média das três provas. _float mediaturma(int n, Aluno** turmas, char turma);_.
